@@ -12,41 +12,68 @@
 </body>
 
 <script>
-    const muela = 5;
-    const perro = 4;
-     let objeto = {
-         nombre: "Juan",
-         edad: 25,
-         tine: ["hola", 2, 4]
-     };
-     console.log(objeto.nombre, objeto.edad, objeto.tine[1])
+    let num1 = 5,
+        num2 = 4;
+
+    if (num1 < num2) {
+        console.log(num1 + " es menor que " + num2)
+    } else
+        console.log(num1 + " es mayor que " + num2)
+        console.log(`hola ${num1} espacio ${num2}`)
+
+    console.log(num1 + num2)
+
+    //objeto
+    let objeto = {
+        nombre: "Juan",
+        edad: 25,
+        tine: ["hola", 2, 4]
+    };
+    console.log(objeto.nombre, objeto.edad, objeto.tine[1])
 
     let lista = [1, 2, 3, 4, 5];
 
-    let funcion43 = function () {
-        console.log("me estoy imprimiendo desde una funcion")
-    }
-    funcion43();
+
     /*  while (perro == 4) {
          console.log("soy un while")
         
      }*/
 
-    for (let index = 0; index < lista.length; index++) {
-        const element = lista[index];
-        console.log("en la vuelta " + index + " soy el numero " + element)
-        console.log(element)
+    // for (let index = 0; index < lista.length; index++) {
+    //     const element = lista[index];
+    //     console.log("en la vuelta " + index + " soy el numero " + element)
+    //     console.log(element)
+    // }
+
+    let funcion43 = function () {
+        console.log("me estoy imprimiendo desde una funcion")
+    }
+    funcion43();
+
+    funcionFlechaSumar = (a,b) => {
+        console.log(`hola soy una funcion fleca`)
+        return a+b
     }
 
-    if (muela < perro) {
-        console.log(muela + " es menor que " + perro)
-    } else
-        console.log(muela + " es mayor que " + perro)
+    
 
+    const resultado= funcionFlechaSumar(3,4);
+    console.log(resultado);
 
+    let palabra = "holac ";
 
+   function contarCadena (palabra) {
+    if (typeof palabra == "string") {
+        console.log(palabra.length)
+    } else {
+        console.log("sa monda no es una palabra")
+    }
+   }
 
-    console.log(muela + perro)
+   let comprobacion = typeof palabra === "string";
+   contarCadena(palabra);
+
+    console.log(palabra.length, comprobacion);
 
 
 
