@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    const muela = 5;
+    const perro = 4;
+     let objeto = {
+         nombre: "Juan",
+         edad: 25,
+         tine: ["hola", 2, 4]
+     };
+     console.log(objeto.nombre, objeto.edad, objeto.tine[1])
+
+    let lista = [1, 2, 3, 4, 5];
+
+    let funcion43 = function () {
+        console.log("me estoy imprimiendo desde una funcion")
+    }
+    funcion43();
+    /*  while (perro == 4) {
+         console.log("soy un while")
+        
+     }*/
+
+    for (let index = 0; index < lista.length; index++) {
+        const element = lista[index];
+        console.log("en la vuelta " + index + " soy el numero " + element)
+        console.log(element)
+    }
+
+    if (muela < perro) {
+        console.log(muela + " es menor que " + perro)
+    } else
+        console.log(muela + " es mayor que " + perro)
+
+
+
+
+    console.log(muela + perro)
+
+
+
+</script>
+
+</html>
