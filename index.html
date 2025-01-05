@@ -75,6 +75,44 @@
 
     console.log(palabra.length, comprobacion);
 
+//         Ejemplo de setTimeout
+// Ejecuta una función después de un tiempo específico (en milisegundos):
+
+console.log("Inicio");
+
+setTimeout(() => {
+    console.log("Esto aparece después de 2 segundos");
+}, 2000); // 2000 ms = 2 segundos
+
+console.log("Fin");
+
+// Ejemplo de clearTimeout
+// Cancela un setTimeout antes de que se ejecute:
+
+
+const temporizador = setTimeout(() => {
+    console.log("Esto nunca se mostrará");
+}, 3000); // Se ejecutaría después de 3 segundos
+
+clearTimeout(temporizador); // Cancela el temporizador
+console.log("Temporizador cancelado");
+
+
+// Ejemplo de setInterval
+// Ejecuta una función repetidamente cada cierto intervalo de tiempo:
+
+let contador = 0;
+
+const intervalo = setInterval(() => {
+    contador++;
+    console.log(`Contador: ${contador}`);
+    if (contador === 5) {
+        clearInterval(intervalo); // Detenemos el intervalo cuando llega a 5
+        console.log("Intervalo detenido");
+    }
+}, 1000); // 1000 ms = 1 segundo
+
+
 
 
 </script>
